@@ -33,8 +33,8 @@ class RiwayatController extends Controller
     {
         //
         riwayat::create([
-            "name" => $request->name,
-            "nama matkul" => $request->matkul
+            "name" => $request->nama,
+            "nama_matkul" => $request->matkul
         ]);
         return redirect("/");
     }

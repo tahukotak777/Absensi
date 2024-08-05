@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, "dashboard"]);
-Route::get('/jadwal', [IndexController::class,'jadwal']);
+Route::get('/riwayat', [IndexController::class,'riwayat']);
 Route::get('/absen', [IndexController::class, "absen"]);
 Route::get('/profil', [IndexController::class, "profil"]);
 Route::get('/login', [MahasiswaController::class, 'index']);
@@ -19,3 +19,4 @@ Route::get('/get-cookie', function () {
 
 Route::post('/absensi', [RiwayatController::class, 'store']);
 Route::post('/logining', [IndexController::class, 'login']);
+Route::get('/logout', [IndexController::class, 'logout']);
