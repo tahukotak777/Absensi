@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id("id_riwayat");
             $table->string("name");
             $table->string('nama_matkul');
+            $table->integer("nim");
             $table->timestamps();
         });
     }

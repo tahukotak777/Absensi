@@ -24,6 +24,13 @@ class DatabaseSeeder extends Seeder
             'jurusan'=>'informatika',
             'tanggal_lahir'=>'12-3-2002',
             'alamat'=>'jl.pluto',
+        ]); 
+
+        DB::table('admins')->insert([
+            'nim'=>'150707',
+            'password'=>Hash::make('afsm'),
+            'nama'=>'farel nanda',
+            'jabatan'=>'programer',
         ]);
     }
 }
