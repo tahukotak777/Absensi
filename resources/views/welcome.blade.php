@@ -113,10 +113,12 @@
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <!-- Your content -->
-       <div class="flex flex-col justify-center items-center w-full my-28">
-        <h1 class="text-3xl font-bold">SELAMAT DATANG</h1>
-        <h1 class="text-3xl font-bold">Di web prototype absensi mahasiswa</h1>
-       </div>
+      <main class="dashboard-bg">
+        <div class="content-center">
+            <h1 class="text-3xl font-bold">SELAMAT DATANG</h1>
+            <h1 class="text-3xl font-bold">Di web prototype absensi mahasiswa</h1>
+        </div>
+      </main>
     </div>
   </main>
 </div>

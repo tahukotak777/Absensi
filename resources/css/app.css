@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #949494; /* Warna latar belakang header */
+    color: white;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.dashboard-bg {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); /* Menyesuaikan tinggi dengan mengurangi tinggi header */
+    background: url('https://www.uii.ac.id/wp-content/uploads/2020/05/FTSP-UII-2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.dashboard-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay gelap untuk meningkatkan keterbacaan teks */
+    z-index: 1;
+}
+
+.content-center {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
