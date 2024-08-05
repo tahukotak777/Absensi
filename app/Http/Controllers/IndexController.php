@@ -7,6 +7,7 @@ use App\Models\riwayat;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
+use \Illuminate\Support\Facades\Cookie;
 
 class IndexController extends Controller
 {
@@ -25,6 +26,12 @@ class IndexController extends Controller
 
     }
 
+    public function logout() {
+        Auth::logout();
+        Cookie::forget("nim");
+        return redirect("login");
+    }
+
     public function dashboard()
     {
         if (Auth::check()) {
@@ -34,10 +41,11 @@ class IndexController extends Controller
         }
     }
 
-    public function jadwal()
+    public function riwayat()
     {
         if (Auth::check()) {
-            return view("jadwal", ["riwayats" => riwayat::all()]);
+            $nim = request()->cookie("nim");
+            return view("riwayat", ["riwayats" => riwayat::where("nim", "=", $nim)]);
         } else {
             return redirect('/login');
         }
@@ -46,7 +54,7 @@ class IndexController extends Controller
     public function absen()
     {
         if (Auth::check()) {
-            return view('absen');
+            return view('absen',);
         } else {
             return redirect('/login');
         }
