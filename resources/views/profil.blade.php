@@ -14,7 +14,7 @@
         <div class="flex items-center">
           <div class="flex-shrink-0">
             <img class="h-8 w-8"
-              src="https://smkkotadijawatimur.wordpress.com/wp-content/uploads/2017/04/logo-smkn-2-sby.jpg"
+              src="https://www.dbl.id/uploads/school/13323/108-SMKN_2_SURABAYA.png"
               alt="Your Company">
           </div>
           <div class="hidden md:block">

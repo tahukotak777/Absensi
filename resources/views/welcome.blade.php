@@ -13,7 +13,7 @@
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="https://smkkotadijawatimur.wordpress.com/wp-content/uploads/2017/04/logo-smkn-2-sby.jpg" alt="Your Company">
+            <img class="h-8 w-8" src="https://www.dbl.id/uploads/school/13323/108-SMKN_2_SURABAYA.png" alt="Your Company">
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
