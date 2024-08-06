@@ -7,11 +7,12 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background: #949494; /* Warna latar belakang header */
+    background: #333; /* Warna latar belakang header */
     color: white;
     padding: 10px;
 }
@@ -26,29 +27,39 @@ header nav ul li {
     margin-right: 20px;
 }
 
-.dashboard-bg {
+.bg-overlay {
     position: relative;
     width: 100%;
-    height: calc(100vh - 60px); /* Menyesuaikan tinggi dengan mengurangi tinggi header */
-    background: url('https://www.uii.ac.id/wp-content/uploads/2020/05/FTSP-UII-2.jpg') no-repeat center center;
+    height: 100vh; /* Mengatur tinggi penuh layar */
+    background: url('https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.2,gy-0.5,q-75,rh-3264,rw-5824,th-1080,tw-1920/1235281159928414238.jpeg') no-repeat center center;
     background-size: cover;
+    filter: blur(0px); /* Sesuaikan blur sesuai kebutuhan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.dashboard-bg::before {
+.bg-overlay::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay gelap untuk meningkatkan keterbacaan teks */
+    background: rgba(0, 0, 0, 0.5); /* Untuk memberikan overlay gelap */
     z-index: 1;
+}
+
+.bg-overlay h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
 }
 
 .content-center {
     position: relative;
     z-index: 2;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,3 +67,4 @@ header nav ul li {
     height: 100%;
     text-align: center;
 }
+
