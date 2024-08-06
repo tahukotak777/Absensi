@@ -13,7 +13,7 @@
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="https://smkkotadijawatimur.wordpress.com/wp-content/uploads/2017/04/logo-smkn-2-sby.jpg" alt="Your Company">
+            <img class="h-8 w-8" src="https://www.dbl.id/uploads/school/13323/108-SMKN_2_SURABAYA.png" alt="Your Company">
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
@@ -113,10 +113,12 @@
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <!-- Your content -->
-       <div class="flex flex-col justify-center items-center w-full my-28">
-        <h1 class="text-3xl font-bold">SELAMAT DATANG</h1>
-        <h1 class="text-3xl font-bold">Di web prototype absensi mahasiswa</h1>
-       </div>
+      <main class="dashboard-bg">
+        <div class="content-center">
+            <h1 class="text-3xl font-bold">SELAMAT DATANG</h1>
+            <h1 class="text-3xl font-bold">Di web prototype absensi mahasiswa</h1>
+        </div>
+      </main>
     </div>
   </main>
 </div>
