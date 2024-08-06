@@ -105,18 +105,18 @@
     </div>
   </nav>
 
-  <header class="bg-white shadow">
+  <!-- <header class="bg-white shadow">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <h1 class="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
     </div>
-  </header>
+  </header> -->
   <main>
-    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <div class="bg-overlay">
       <!-- Your content -->
       <main class="dashboard-bg">
         <div class="content-center">
             <h1 class="text-3xl font-bold">SELAMAT DATANG</h1>
-            <h1 class="text-3xl font-bold">Di web prototype absensi mahasiswa</h1>
+            <h1 class="text-3xl font-bold">WEB PROTOTYPE ABSENSI MAHASISWA/I</h1>
         </div>
       </main>
     </div>
